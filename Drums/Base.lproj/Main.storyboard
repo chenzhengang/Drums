@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NlR-E3-Pf5">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Oscillator View Controller-->
+        <scene sceneID="nqE-Bn-bGr">
+            <objects>
+                <viewController id="mlg-mQ-woQ" customClass="OscillatorViewController" customModule="Drums" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="81c-rE-SwP"/>
+                        <viewControllerLayoutGuide type="bottom" id="EXH-HB-Hti"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rK3-Hs-Fbj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zxd-jr-hi5">
+                        <barButtonItem key="leftBarButtonItem" title="back" id="m7p-Q2-xUI">
+                            <connections>
+                                <action selector="backButton:" destination="mlg-mQ-woQ" id="oKc-ux-s86"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Bj-mz-bbA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2764" y="-645"/>
+        </scene>
+        <!--Additive View Controller-->
+        <scene sceneID="1nM-WL-wjx">
+            <objects>
+                <viewController id="Adz-FA-h9Y" customClass="AdditiveViewController" customModule="Drums" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uRD-ER-ewy"/>
+                        <viewControllerLayoutGuide type="bottom" id="c0X-zB-TZT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zwj-cH-dXL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O3n-KI-jcO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3397" y="397"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fl3-UX-ft5">
+            <objects>
+                <viewController id="Uiy-m1-KVZ" customClass="ADSRViewController" customModule="Drums" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lOD-A1-kOi"/>
+                        <viewControllerLayoutGuide type="bottom" id="qtV-Iv-jJr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t7C-if-4pT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eaa-Zf-0sN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4160.8695652173919" y="-427.23214285714283"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Drums" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="p1p-7o-fgh">
+                                <rect key="frame" x="20" y="88" width="374" height="754"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tJX-bk-BlW">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="372"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mTf-Xv-nRy" customClass="AKButton" customModule="AudioKitUI">
+                                                <rect key="frame" x="0.0" y="0.0" width="86" height="372"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4gy-ec-DOA" customClass="AKButton" customModule="AudioKitUI">
+                                                <rect key="frame" x="96" y="0.0" width="86" height="372"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KoR-FE-oqb" customClass="AKButton" customModule="AudioKitUI">
+                                                <rect key="frame" x="192" y="0.0" width="86" height="372"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cVg-wO-n76" customClass="AKButton" customModule="AudioKitUI">
+                                                <rect key="frame" x="288" y="0.0" width="86" height="372"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZUK-25-Feg">
+                                        <rect key="frame" x="0.0" y="382" width="374" height="372"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pdb-1A-stp" customClass="AKButton" customModule="AudioKitUI">
+                                                <rect key="frame" x="0.0" y="0.0" width="86" height="372"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pwa-HT-sQd" customClass="AKButton" customModule="AudioKitUI">
+                                                <rect key="frame" x="96" y="0.0" width="86" height="372"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ASD-hG-l5r" customClass="AKButton" customModule="AudioKitUI">
+                                                <rect key="frame" x="192" y="0.0" width="86" height="372"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLX-fa-ESR" customClass="AKButton" customModule="AudioKitUI">
+                                                <rect key="frame" x="288" y="0.0" width="86" height="372"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="p1p-7o-fgh" secondAttribute="bottom" constant="20" id="63x-3O-YxU"/>
+                            <constraint firstItem="p1p-7o-fgh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="RqH-cr-Ykj"/>
+                            <constraint firstItem="p1p-7o-fgh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="YUT-kX-C3d"/>
+                            <constraint firstItem="p1p-7o-fgh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="j0E-2E-mBP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="drumPad11" destination="mTf-Xv-nRy" id="SsJ-Lc-LiH"/>
+                        <outlet property="drumPad12" destination="4gy-ec-DOA" id="Fvd-Py-CRt"/>
+                        <outlet property="drumPad13" destination="KoR-FE-oqb" id="DRU-fc-vS2"/>
+                        <outlet property="drumPad14" destination="cVg-wO-n76" id="OEU-Vb-onL"/>
+                        <outlet property="drumPad21" destination="Pdb-1A-stp" id="tEl-td-7bF"/>
+                        <outlet property="drumPad22" destination="Pwa-HT-sQd" id="ysY-eR-2Y4"/>
+                        <outlet property="drumPad23" destination="ASD-hG-l5r" id="aBY-EY-itj"/>
+                        <outlet property="drumPad24" destination="cLX-fa-ESR" id="aop-Ld-TGn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="335" y="1083"/>
+        </scene>
+        <!--Polyphony View Controller-->
+        <scene sceneID="bmN-wP-iTD">
+            <objects>
+                <viewController id="234-LZ-q7l" customClass="PolyphonyViewController" customModule="Drums" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hx7-b2-Fyl"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ibm-kc-9zz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k7F-fZ-Ctc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aEL-dm-hUO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1457" y="1037"/>
+        </scene>
+        <!--Sample View Controller-->
+        <scene sceneID="s4u-Rz-bCr">
+            <objects>
+                <viewController id="nkl-cx-1fd" customClass="SampleViewController" customModule="Drums" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h68-DO-q8J"/>
+                        <viewControllerLayoutGuide type="bottom" id="cZD-cp-DKU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YnT-Um-MpN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="e33-AC-6Zw">
+                        <barButtonItem key="leftBarButtonItem" title="back" id="17T-ss-Sk5">
+                            <connections>
+                                <action selector="cancel:" destination="nkl-cx-1fd" id="kuO-ik-eZT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gme-QQ-WCD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="-377"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="4p9-fM-qnO">
+            <objects>
+                <viewController id="DjL-Dp-0iG" customClass="MainViewController" customModule="Drums" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lnF-c0-o90"/>
+                        <viewControllerLayoutGuide type="bottom" id="aGn-xl-G1e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PMt-ar-8vp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gR-sd-8ez">
+                                <rect key="frame" x="158" y="134" width="95" height="30"/>
+                                <state key="normal" title="Oscillator"/>
+                                <connections>
+                                    <segue destination="mlg-mQ-woQ" kind="show" id="Mbd-gH-WwQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11E-HS-p1k">
+                                <rect key="frame" x="142" y="259" width="127" height="30"/>
+                                <state key="normal" title="Additive Synthesis"/>
+                                <connections>
+                                    <segue destination="Adz-FA-h9Y" kind="show" id="xVV-xc-4TP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpB-WY-SKB">
+                                <rect key="frame" x="169" y="387" width="72" height="30"/>
+                                <state key="normal" title="Polyphony"/>
+                                <connections>
+                                    <segue destination="234-LZ-q7l" kind="show" id="QcM-0m-spl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyc-d9-SxU">
+                                <rect key="frame" x="176" y="453" width="59" height="30"/>
+                                <state key="normal" title="Samples"/>
+                                <connections>
+                                    <segue destination="nkl-cx-1fd" kind="show" id="ABy-5B-39e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zV7-HV-szI">
+                                <rect key="frame" x="186" y="323" width="38" height="30"/>
+                                <state key="normal" title="Drum"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Vqj-W7-U6D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cC3-u9-kRC">
+                                <rect key="frame" x="185" y="199" width="40" height="30"/>
+                                <state key="normal" title="ADSR"/>
+                                <connections>
+                                    <segue destination="Uiy-m1-KVZ" kind="show" id="StH-d4-ajv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zV7-HV-szI" firstAttribute="top" secondItem="11E-HS-p1k" secondAttribute="bottom" constant="34" id="0AK-dC-NjR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qyc-d9-SxU" secondAttribute="trailing" constant="159" id="28b-Jh-1bv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bpB-WY-SKB" secondAttribute="trailing" constant="153" id="2C1-k2-hHH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zV7-HV-szI" secondAttribute="trailing" constant="170" id="2JX-DR-uSh"/>
+                            <constraint firstItem="qyc-d9-SxU" firstAttribute="top" secondItem="bpB-WY-SKB" secondAttribute="bottom" constant="36" id="2SY-tK-hox"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8gR-sd-8ez" secondAttribute="trailing" constant="141" id="5Mx-Sx-EEP"/>
+                            <constraint firstItem="11E-HS-p1k" firstAttribute="top" secondItem="cC3-u9-kRC" secondAttribute="bottom" constant="30" id="5cN-Qj-NUY"/>
+                            <constraint firstItem="zV7-HV-szI" firstAttribute="leading" secondItem="PMt-ar-8vp" secondAttribute="leadingMargin" constant="166" id="6iS-J0-dzI"/>
+                            <constraint firstItem="bpB-WY-SKB" firstAttribute="top" secondItem="zV7-HV-szI" secondAttribute="bottom" constant="34" id="BPI-wY-x2g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cC3-u9-kRC" secondAttribute="trailing" constant="169" id="Ert-Kh-OBr"/>
+                            <constraint firstItem="8gR-sd-8ez" firstAttribute="leading" secondItem="PMt-ar-8vp" secondAttribute="leadingMargin" constant="138" id="N6p-cA-HPu"/>
+                            <constraint firstItem="qyc-d9-SxU" firstAttribute="leading" secondItem="PMt-ar-8vp" secondAttribute="leadingMargin" constant="156" id="T2A-CF-wyx"/>
+                            <constraint firstItem="11E-HS-p1k" firstAttribute="leading" secondItem="PMt-ar-8vp" secondAttribute="leadingMargin" constant="122" id="TNf-Y7-A7g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="11E-HS-p1k" secondAttribute="trailing" constant="125" id="aQv-g6-Jwp"/>
+                            <constraint firstItem="8gR-sd-8ez" firstAttribute="top" secondItem="lnF-c0-o90" secondAttribute="bottom" constant="46" id="dqA-Xu-BHz"/>
+                            <constraint firstItem="cC3-u9-kRC" firstAttribute="top" secondItem="8gR-sd-8ez" secondAttribute="bottom" constant="35" id="kmP-k6-ccm"/>
+                            <constraint firstItem="cC3-u9-kRC" firstAttribute="leading" secondItem="PMt-ar-8vp" secondAttribute="leadingMargin" constant="165" id="lVI-YK-J39"/>
+                            <constraint firstItem="bpB-WY-SKB" firstAttribute="leading" secondItem="PMt-ar-8vp" secondAttribute="leadingMargin" constant="149" id="x4j-Ce-YeT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZNb-ca-IsF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hku-6P-5qK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1989.8550724637682" y="137.94642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3Sq-tz-eGX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NlR-E3-Pf5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FJy-b2-rSI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DjL-Dp-0iG" kind="relationship" relationship="rootViewController" id="qwf-pX-rvK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZKg-GQ-XdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.7101449275362" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
